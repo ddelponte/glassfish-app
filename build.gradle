@@ -35,10 +35,10 @@ configurations.all {
 
 dependencies {
     compile "org.springframework.boot:spring-boot-starter-logging"
-    provided "org.springframework.boot:spring-boot-autoconfigure" // marked provided
+    provided "org.springframework.boot:spring-boot-autoconfigure" // change from compile to provided
     compile "org.grails:grails-core"
     compile "org.springframework.boot:spring-boot-starter-actuator"
-    provided "org.springframework.boot:spring-boot-starter-tomcat" // marked as provided
+    provided "org.springframework.boot:spring-boot-starter-tomcat" // change from compile to provided
     //compile "org.springframework.boot:spring-boot-starter-batch" // new
     compile "org.springframework.batch:spring-batch-core:2.2.7.RELEASE" // new
     //compile "org.hibernate:hibernate-ehcache:5.1.5.Final" // new
@@ -53,7 +53,7 @@ dependencies {
     compile "org.grails:grails-plugin-url-mappings"
     compile "org.grails:grails-plugin-interceptors"
     compile "org.grails.plugins:cache"
-    compile "org.grails.plugins:async:3.3.4.DEAN.BUILD-SNAPSHOT"
+    compile "org.grails.plugins:async:3.3.4.DEAN.BUILD-SNAPSHOT" // Modified to usePreDestroy annotation fix
     compile "org.grails.plugins:scaffolding"
     compile "org.grails.plugins:events"
     compile "org.grails.plugins:hibernate5"
